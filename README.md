@@ -91,3 +91,5 @@ That will get it going. You'll also have to install the seeeduino boards list to
 ## Credits
 
 me lol. No but the only reason I could do this is inspiration from this [youtube vide](https://www.youtube.com/watch?v=0yT_qYHqlOU&feature=youtu.be), Porzellan Props, Love Live being so good, and support on other projects earlier this year from the cons & stuff discord.
+
+If you have any questions on how I did any of this, I'm most easily reachable on [twitter](https://twitter.com/Thene_tho/)
