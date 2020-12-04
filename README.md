@@ -42,7 +42,7 @@ Once the board is assembled, you can mount the battery in the earcup and glue th
 ## Assembling the Expression Plate
 
 ![Front Plate](/Images/Front_Plate.jpg)
-![Back Plate](/Images/Back_Plate.jpg)
+![Back Plate](/Images/Back_plate.jpg)
 
 First, tape/glue your boards together in this format:
 BOARD 1 | BOARD 4
