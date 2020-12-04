@@ -1,7 +1,7 @@
 ![Rina-Chan Board, Glowing and Smiling!](/Images/Complete_Face.jpg)
 
 # RinaChanBoard
- Code, STLs and info to crate a working Rina-Chan Board from Love Live!
+ Code, STLs and info to create a working Rina-Chan Board from Love Live!
  
 ## The Headset Model
 
