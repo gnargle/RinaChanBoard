@@ -11,4 +11,9 @@
 * OPTIONAL: LiPo battery. Doesn't need to be very big, I used this. https://www.amazon.co.uk/gp/product/B08215N9R8/ref=ppx_yo_dt_b_asin_image_o08_s01?ie=UTF8&psc=1
 * OPTIONAL: JST connectors or Molex connectors for the battery. So you can easily disconnect it if needed. The above battery comes with a molex, I bought these JST connectors so had to solder the new connector on to it anyway because I'm an idiot and can't read. https://www.amazon.co.uk/gp/product/B07449V33P/ref=ppx_yo_dt_b_asin_image_o08_s00?ie=UTF8&psc=1
 
-If you're not going to use the grove battery board you can roll your own solution but I found this was the easiest solution with very few drawbacks.
+If you're not going to use the grove battery board you can roll your own battery solution but I found this was the easiest solution with very few drawbacks.
+
+## Assembly 
+
+My board is kind of a mess but the pinout is simple. Pins 3,5 and 6 are the buttons (these are modifiable consts in the code - they were originally 4,5 and 6 but I stripped the metal from the contact next to 4) and pin 7 (again, modifiable) is the output data line for the LED panels. The panels are 3-wire WS2812Bs, PWR/DIN/GRN. The ones I'm using run off 3.3v just fine - if you're using the battery board I recommend this as tying it to the 5v pin shares the power between the Seeeduino and the board, causing dim LEDs.
+Each button has one pin to 3.3V and one pin to ground through a 10k resistor (see arduino's [button page](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button) for more info). The output pin from the button is the one opposite the ground pin.
