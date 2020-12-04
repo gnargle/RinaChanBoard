@@ -32,7 +32,8 @@ unsigned long startMillis;  //some global variables available anywhere in the pr
 unsigned long currentMillis;
 bool blinking = false;
 
-//Consts.
+//Consts. Customize these according to the pins your buttons and LED data are on, how sensitive to deboundce your buttons are,
+//and how long you want Rina to go between blink (and how long those blinks should last!)
 const unsigned long blinkPeriod = 5000;  //the value is a number of milliseconds
 const unsigned long blinkLength = 500;
 const int eyePin = 3;
