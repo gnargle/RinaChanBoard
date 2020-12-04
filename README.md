@@ -1,3 +1,5 @@
+![Rina-Chan Board, Glowing and Smiling!](/Images/Complete_Face.jpg)
+
 # RinaChanBoard
  Code, STLs and info to crate a working Rina-Chan Board from Love Live!
  
@@ -27,6 +29,10 @@ I used a hacked-together google docs sheet that I coloured in manually and copie
 
 ## Assembling the Board 
 
+![Full Board](/Images/Full_Board.jpg)
+![Front of the Board](/Images/Front_Board.jpg)
+![Back of the Board](/Images/Back_Board.jpg)
+
 My board is kind of a mess but the pinout is simple. Pins 3,5 and 6 are the buttons (these are modifiable consts in the code - they were originally 4,5 and 6 but I stripped the metal from the contact next to 4) and pin 7 (again, modifiable) is the output data line for the LED panels. The panels are 3-wire WS2812Bs, PWR/DIN/GRN. The ones I'm using run off 3.3v just fine - if you're using the battery board I recommend this as tying it to the 5v pin shares the power between the Seeeduino and the board, causing dim LEDs.
 
 Each button has one pin to 3.3V and one pin to ground through a 10k resistor (see arduino's [button page](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button) for more info). The output pin from the button is the one opposite the ground pin.
@@ -35,7 +41,12 @@ Once the board is assembled, you can mount the battery in the earcup and glue th
 
 ## Assembling the Expression Plate
 
+![Front Plate](/Images/Front_Plate.jpg)
+![Back Plate](/Images/Back_Plate.jpg)
+
 First, tape/glue your boards together in this format:
 BOARD 1 | BOARD 4
 BOARD 2 | BOARD 3
 This means that in terms of LED order, the top left quadrant is first, then bottom left, then bottom right, then top right. Connect the DOUT -> DIN as appropriate along this pattern - the DIN for top left should be where the board connects, and the DOUT from top right should be unpopulated.
+
+Then sandwich the two front plate holder parts either side of the LED plate and hot glue to hold it in place.
