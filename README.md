@@ -23,7 +23,7 @@ If you're not going to use the grove battery board you can roll your own battery
 
 ## Designing the Expressions
 
-I used a hacked-together google docs sheet that I coloured in manually and copied the numbers out manually into arrays. There's definitely more clever ways of doing this but I hate working with spreadsheets so I was happy to be manual on this. What is useful in this case is I marked with outlines where the overlaps between the panels are. You can find my doc [here](https://docs.google.com/spreadsheets/d/1Beuz8oJ9O0KB6ERlhMPzRE0FvdVzDu4BHBZgB-ASULc/edit?usp=sharing).
+I used a hacked-together google docs sheet that I coloured in manually and copied the numbers out manually into arrays. There's definitely more clever ways of doing this but I hate working with spreadsheets so I was happy to be manual on this. What is useful in this case is I marked with outlines where the overlaps between the panels are. You can find my doc [here](https://docs.google.com/spreadsheets/d/1Beuz8oJ9O0KB6ERlhMPzRE0FvdVzDu4BHBZgB-ASULc/edit?usp=sharing). Use the adjusted spacing sheet - the first sheet is a full 16x16 matrix which has enough room for full model-accurate expressions. If you're going to use dense strips, I recommend a layout like this. Otherwise, use "adjusted spacing", sheet 2 ("Corrected Numbers") was an intermediary after I got the boards to actually layout the panels correctly, before I worked out any overlapping.
 
 ## Assembling the Board 
 
