@@ -53,3 +53,41 @@ BOARD 2 | BOARD 3
 This means that in terms of LED order, the top left quadrant is first, then bottom left, then bottom right, then top right. Connect the DOUT -> DIN as appropriate along this pattern - the DIN for top left should be where the board connects, and the DOUT from top right should be unpopulated.
 
 Then sandwich the two front plate holder parts either side of the LED plate and hot glue to hold it in place.
+
+## The code
+
+I've not worked on C++ in a long while (most of my work is in C# nowadays) and so I know the code is not the best it could be. the switch statements are particularly rubbish - I wanted to have a list of array pointers and just select them as appropriate but I couldn't get that working properly and the point of this project was the resultant prop, not nice code. So in this case, it working is enough for me. Feel free to PR a change that will make it cleaner if you want.
+
+The code uses two Arduino librariers - FastLED and ezbutton. ezbutton works out the box but the version of FastLED in the arduino library does not support Seeeduino xiao (or didn't when I was working on this, anyway.). It's trivial to add this, though: (reproduced from https://forum.seeedstudio.com/t/xiao-using-fastled-to-control-ws2812b/252077/5 for posterity)
+
+```To get FastLED working you need to verify you are have the latest update to both the seeeduino boards as well as the FastLED library.
+
+After verifying you have the most up to date versions of both.
+
+Navigate into the FastLED library on your computer. Typically in C:\users<user name>\documents\arduino\libraries
+
+you will want to navigate in the FastLED folder into the platforms then arm, then into d21, then edit the file called “fastpin_arm_d21”
+
+Scroll down to around line 100 and paste this, and save.
+
+#elif defined(SEEED_XIAO_M0)
+
+#define MAX_PIN 10
+
+_FL_DEFPIN( 0, 2,0); _FL_DEFPIN( 1, 4,0); _FL_DEFPIN( 2,10,0); _FL_DEFPIN( 3,11,0);
+
+_FL_DEFPIN( 4, 8,0); _FL_DEFPIN( 5, 9,0); _FL_DEFPIN( 6, 8,1); _FL_DEFPIN( 7, 9,1);
+
+_FL_DEFPIN( 8, 7,0); _FL_DEFPIN( 9, 5,0); _FL_DEFPIN(10, 6,0);
+
+#define SPI_DATA 9
+
+#define SPI_CLOCK 8
+
+#define HAS_HARDWARE_PIN_SUPPORT 1
+```
+That will get it going. You'll also have to install the seeeduino boards list to flash to it but that's covered in Seeeduino's own docs, [here](https://wiki.seeedstudio.com/Seeeduino-XIAO/#getting-started).
+
+## Credits
+
+me lol. No but the only reason I could do this is inspiration from this [youtube vide](https://www.youtube.com/watch?v=0yT_qYHqlOU&feature=youtu.be), Porzellan Props, Love Live being so good, and support on other projects earlier this year from the cons & stuff discord.
