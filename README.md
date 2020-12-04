@@ -60,7 +60,8 @@ I've not worked on C++ in a long while (most of my work is in C# nowadays) and s
 
 The code uses two Arduino librariers - FastLED and ezbutton. ezbutton works out the box but the version of FastLED in the arduino library does not support Seeeduino xiao (or didn't when I was working on this, anyway.). It's trivial to add this, though: (reproduced from https://forum.seeedstudio.com/t/xiao-using-fastled-to-control-ws2812b/252077/5 for posterity)
 
-```To get FastLED working you need to verify you are have the latest update to both the seeeduino boards as well as the FastLED library.
+```
+To get FastLED working you need to verify you are have the latest update to both the seeeduino boards as well as the FastLED library.
 
 After verifying you have the most up to date versions of both.
 
