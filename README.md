@@ -4,7 +4,9 @@
 ## The Headset Model
 
 The headset model was purchased from [Etsy](https://www.etsy.com/uk/listing/722676367/love-live-pdp-rina-tennoji-headset?transaction_id=2130833114). It's a brilliant model and fitted the exact purpose I needed it for. I highly recommend it.
-The only STLs I am including are ones I peersonally modified to fit the use case (that is, creating a blank board and adding a grid to it). I am also including the diffuser.scad that I used - this is from thingiverse and is freely available. Use OpenSCAD to modify it to produce the size of grid you need, then attach it to the blank_plate.stl to create your grid. blank_grid.stl is the grid for the overlapped LED boards I used attached to the blank plate already.
+
+The only STLs I am including are ones I personally modified to fit the use case (that is, creating a blank board and adding a grid to it). I am also including the diffuser.scad that I used - this is from thingiverse and is freely available. Use OpenSCAD to modify it to produce the size of grid you need, then attach it to the blank_plate.stl to create your grid. blank_grid.stl is the grid for the overlapped LED boards I used attached to the blank plate already.
+
 Both are janky as hell, becasuse I don't know anything about modelling. 
 
 ## Required Hardware 
