@@ -45,8 +45,11 @@ Once the board is assembled, you can mount the battery in the earcup and glue th
 ![Back Plate](/Images/Back_plate.jpg)
 
 First, tape/glue your boards together in this format:
+
 BOARD 1 | BOARD 4
+
 BOARD 2 | BOARD 3
+
 This means that in terms of LED order, the top left quadrant is first, then bottom left, then bottom right, then top right. Connect the DOUT -> DIN as appropriate along this pattern - the DIN for top left should be where the board connects, and the DOUT from top right should be unpopulated.
 
 Then sandwich the two front plate holder parts either side of the LED plate and hot glue to hold it in place.
