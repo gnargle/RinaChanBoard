@@ -1,5 +1,11 @@
 # RinaChanBoard
  Code, STLs and info to crate a working Rina-Chan Board from Love Live!
+ 
+## The Headset Model
+
+The headset model was purchased from [Etsy] (https://www.etsy.com/uk/listing/722676367/love-live-pdp-rina-tennoji-headset?transaction_id=2130833114). It's a brilliant model and fitted the exact purpose I needed it for. I highly recommend it.
+The only STLs I am including are ones I peersonally modified to fit the use case (that is, creating a blank board and adding a grid to it). I am also including the diffuser.scad that I used - this is from thingiverse and is freely available. Use OpenSCAD to modify it to produce the size of grid you need, then attach it to the blank_plate.stl to create your grid. blank_grid.stl is the grid for the overlapped LED boards I used attached to the blank plate already.
+Both are janky as hell, becasuse I don't know anything about modelling. 
 
 ## Required Hardware 
 * Seeduino Xiao - This is the smallest arduino-compatible board I've found. https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html
@@ -16,4 +22,7 @@ If you're not going to use the grove battery board you can roll your own battery
 ## Assembly 
 
 My board is kind of a mess but the pinout is simple. Pins 3,5 and 6 are the buttons (these are modifiable consts in the code - they were originally 4,5 and 6 but I stripped the metal from the contact next to 4) and pin 7 (again, modifiable) is the output data line for the LED panels. The panels are 3-wire WS2812Bs, PWR/DIN/GRN. The ones I'm using run off 3.3v just fine - if you're using the battery board I recommend this as tying it to the 5v pin shares the power between the Seeeduino and the board, causing dim LEDs.
+
 Each button has one pin to 3.3V and one pin to ground through a 10k resistor (see arduino's [button page](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button) for more info). The output pin from the button is the one opposite the ground pin.
+
+Once the board is assembled, you can mount the battery in the earcup and glue the board to the side of the headset. The thickness of the plate with the boards attached are such that you will need to glue that in place inbetween the two halves of the front board from the model.
