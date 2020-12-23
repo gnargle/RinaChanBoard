@@ -1,3 +1,4 @@
+![Me wearing my new Rina-Chan Board!](/Images/finished.jpg)
 ![Rina-Chan Board, Glowing and Smiling!](/Images/Complete_Face.jpg)
 
 # RinaChanBoard
